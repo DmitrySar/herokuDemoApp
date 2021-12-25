@@ -10,7 +10,7 @@ public class MainController {
 
     @GetMapping("/")
     public String getMainPage(@RequestParam(defaultValue = "World") String message, Model model) {
-        model.addAttribute("message", "Hello, " + message + "!");
+        model.addAttribute("message", "Demo heroku for " + message + "!");
         return "index";
     }
 }
